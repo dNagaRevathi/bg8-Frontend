@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Page</title>
+    <link rel="stylesheet" href="prediction.css"> <!-- Link to the CSS file for styling -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Lung Cancer Prediction</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="prediction.html" class="active">Prediction</a></li>
+              
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="prediction-section">
+        <div class="prediction-container">
+            <h2>Upload Your Lung Scan</h2>
+            <p>Upload a lung scan image to predict the possibility of lung cancer.</p>
+            
+            <!-- Upload Form -->
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <input type="file" name="lungImage" accept="image/*" required>
+                <button type="submit" class="predict-button">Get Prediction</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
